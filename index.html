@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link href="../medias/muthayammal_logo.png" rel="icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family:  sans-serif;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;;
+        }
+
+
+        .context {
+            width: 100%;
+            position: absolute;
+            top:50vh;
+            
+        }
+
+        
+        .area{
+            background:#001f3f; 
+            background: -webkit-linear-gradient(to right, moccasin, lightpink, lightblue);  
+            width: 100%;
+            height:100vh;        
+        }
+
+        .circles{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* display: none */
+        }
+
+        .circles li{
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background: rgba(63, 135, 228, 0.4);
+            /* background: #1e56a0; */
+            /* background: rgba(220, 11, 11, 0.2); */
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+            
+        }
+
+        .circles li:nth-child(1){
+            left: 25%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+
+        .circles li:nth-child(2){
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .circles li:nth-child(3){
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .circles li:nth-child(4){
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .circles li:nth-child(5){
+            left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(6){
+            left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+
+        .circles li:nth-child(7){
+            left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+
+        .circles li:nth-child(8){
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .circles li:nth-child(9){
+            left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .circles li:nth-child(10){
+            left: 85%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+        @keyframes animate {
+
+            0%{
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100%{
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+
+        }
+        .parent
+        {
+            display: flex;
+            width: 100;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .child2
+        {
+            height: 28em;
+
+        }
+        .child1
+        {
+            height: 28em;
+            border-radius: 20px;
+        }
+        .inner-child1
+        {
+            
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .child2 {
+                         display: none;
+                    }
+
+            .parent{
+                        display: flex;
+                        width: 100;
+                        height: 100vh;
+                        justify-content: center;
+                        align-items: center;
+                     }
+
+            .circles{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        /* display: none */
+                    }
+            .heading{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                     }
+            .mectitle{
+                        margin: 15px 30px 10px;  
+                        height: 10em;
+                        text-align: center;           
+                     }
+            .image
+            {
+                margin-top: 20px;
+            }
+            
+        }
+        form{
+            z-index: 1; /* Add this line to set a higher z-index for the form */
+             position: relative;
+        }
+        .form-button
+        {
+            padding: 4px 80px 4px ;
+        }
+        .heading
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<!-- Background -->
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+            <div class="conatiner">
+                <div class="parent row justify-content-center">
+                   <div class="heading">
+                        <div class="image bg-white">
+                            <img src="../medias/muthayammal_logo.png" style="width: 8em;">
+                        </div>
+                        <div class="mectitle  ms-3">
+                            <h1 class="text-white display-4 fw-bold">Muthayammal Engineering College</h1>
+                            <h4 class="text-white fw-light">An Autonomous Institution</h4>
+                            <h4 class="text-white fw-light">Approved by AICTE | Affiliated to Anna University</h4>
+                        </div>
+                   </div>
+
+                   
+                    <div class="child1 col-lg-4 col-10 bg-light m-3">
+                        <div class="inner-child1">
+                            <form class="form p-4">
+                                <h1 class="text-center mt-3 fw-bold" style="color: #121395;letter-spacing: 2px;">Login</h1>
+                                <div class="frombody mt-5">
+                                        <lable class="form-label mt-5  ">E-Mail address</lable>
+                                        <input class="form-control text-muted mt-3" placeholder="abc@gmail.com" type="email">
+                                        <label class="form-label mt-3">Passowrd</label>
+                                        <input class="form-control text-muted" placeholder="" type="password">
+                                    <div class=" mt-5 row text-center ">
+                                        <button class="btn col-lg-11 ms-lg-3 me-lg-3 btn-primary ms-sm-1">Login</button>
+                                    </div>
+                                    <p class="mt-3 text-center">Dont have an account? <a href="#" style="text-decoration: none;">Create one</a></p>
+                                   
+
+                                </div>
+                            </form>
+
+                        </div>
+            
+                    </div>
+                    <!-- carousel -->
+                    <div class="child2 col-lg-6 bg-dark p-0 ms-4">
+                        <div class="carousel carousel-dark slide" data-bs-ride="carousel" id="my">
+                            <div class="carousel-inner" style="border-radius: 10px;">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="../medias/Muthayammalcollege.png" style="height: 28em;width: 100%;">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="../medias/muthyammalcaorusel2.jpg" style="height: 28em;">
+                                    
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="../medias/muthayammalcarousel3.jpg_large" style="height: 28em;">
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+            </div>
+</div >
+
+    
+</body>
+</html>
