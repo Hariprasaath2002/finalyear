@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login form</title>
-    <link href="./images/muthayammal_logo.png" rel="icon">
+    <link href="/images/muthayammal_logo.png" rel="icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,7 +39,8 @@
             font-family:  sans-serif;
             overflow-y: hidden;
             overflow-x: hidden;
-            font-family: 'Poppins', sans-serif;;
+            font-family: 'Poppins', sans-serif;
+            background-color:#001f3f ;
         }
 
 
@@ -65,7 +66,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            /* display: none */
+            display: none
         }
 
         .circles li{
@@ -170,7 +171,7 @@
                 opacity: 0;
                 border-radius: 50%;
             }
-
+            
         }
         .parent
         {
@@ -197,7 +198,7 @@
         
         @media only screen and (max-width: 480px) {
             body{
-                background-color: #001f3f;
+                background-color:#001f3f ;
             }
             .child2 {
                          display: none;
@@ -231,35 +232,47 @@
                         height: 10em;
                         text-align: center;           
                      }
-
-            .image{
+            .image  {
                          margin-top: 20px;
-                 }
-
-            body{
-                font-family:  sans-serif;
-                overflow-y: visible;
-                overflow-x: hidden;
-                font-family: 'Poppins', sans-serif;
-                 }
+                     }
             .area{
-                width: 100%;
-                height: 100vh;
+                /* padding-inline-start: 10px;  */
+                /* padding: 30px; */
             }
-            /* tablet */
-
-        @media only screen and (min-width: 481px) and (max-width: 1100px) {
-
-            .child2 {
-                         display: none;
-                    }
-            .heading{
-                padding: 20px;
+            .mectitle{
+                margin-left: 20px;
+            }
+            .image{
+                /* width: 4em; */
             }
         }
+        @media only screen and (min-width: 481px) and (max-width: 1023px)  {
+            .child2{
+                display: none;
+            }
+            .child1
+            {
+                position: relative;
+                bottom: 60px;
+                margin-left: 65px;
+                /* left: 50px; */
 
+            }
+            .heading{
+                position: relative;
+                left: 80px;
+            }
+            .im{
+                
+                height: 200px;
+            }
+            .mectitle{
+                margin-left: 20px;
+            }
+    
             
         }
+
         form{
             z-index: 1; /* Add this line to set a higher z-index for the form */
              position: relative;
@@ -274,7 +287,6 @@
             align-items: center;
             justify-content: center;
         }
-
         
         
     </style>
@@ -298,21 +310,21 @@
                 <div class="parent row justify-content-center">
                    <div class="heading">
                         <div class="image bg-white">
-                            <img src="./images/muthayammal_logo.png" style="width: 8em;">
+                            <img src="/images/muthayammal_logo.png" style="width:8em;">
                         </div>
-                        <div class="mectitle  ms-3">
-                            <h1 class="text-white display-4 fw-bold">Muthayammal Engineering College</h1>
-                            <h4 class="text-white fw-light">An Autonomous Institution</h4>
-                            <h4 class="text-white fw-light">Approved by AICTE | Affiliated to Anna University</h4>
+                        <div class="mectitle ms-md-5 ms-3">
+                            <p class="text-white display-5 fw-bold">Muthayammal Engineering College</p>
+                            <p class="text-white fw-light">An Autonomous Institution</p>
+                            <p class="text-white fw-light">Approved by AICTE | Affiliated to Anna University</p>
                         </div>
                    </div>
 
                    
-                    <div class="child1 col-lg-4 col-10 bg-light m-3">
+                    <div class="child1 col-lg-4 col-10 bg-light">
                         <div class="inner-child1">
                             <form class="form p-4">
                                 <h1 class="text-center mt-3 fw-bold" style="color: #121395;letter-spacing: 2px;">Login</h1>
-                                <div class="frombody mt-5">
+                                <div class="frombody">
                                         <lable class="form-label mt-5  ">E-Mail address</lable>
                                         <input class="form-control text-muted mt-3" placeholder="abc@gmail.com" type="email">
                                         <label class="form-label mt-3">Passowrd</label>
@@ -334,14 +346,14 @@
                         <div class="carousel carousel-dark slide" data-bs-ride="carousel" id="my">
                             <div class="carousel-inner" style="border-radius: 10px;">
                                 <div class="carousel-item active" data-bs-interval="2000">
-                                    <img src="./images/Muthayammalcollege.png" style="height: 28em;width: 100%;">
+                                    <img src="/images/Muthayammalcollege.png" style="height: 28em;width: 100%;">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="./images/muthyammalcaorusel2.jpg" style="height: 28em;">
+                                    <img src="/images/muthyammalcaorusel2.jpg" style="height: 28em;">
                                     
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="./images/muthayammalcarousel3.jpg_large" style="height: 28em;">
+                                    <img src="/images/muthayammalcarousel3.jpg_large" style="height: 28em;">
                                     
                                 </div>
 
