@@ -33,11 +33,13 @@
         body{
             margin: 0;
             padding: 0;
-            /* background-image:url(/images/muthayammal_logo.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            align-items: center;
-            backdrop-filter: blur(3px);  */
+            background-image: url(/images/17580.jpg);
+            background-size: cover; /* Ensures the background covers the entire element */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the background image from repeating */
+            background-attachment: fixed; /* Fixes the background image, so it doesn't scroll with the content */
+            height: 100vh; /* Sets the height of the background to the viewport height */
+            overflow: hidden; 
             
         }
         @media only screen and (max-width:480px)
@@ -82,16 +84,6 @@
         h1,h2,h3{
             text-wrap: balance;
         }
-        .bg {
-            background-image: url(/images/17580.jpg);
-            background-size: cover; /* Ensures the background covers the entire element */
-            background-position: center; /* Centers the background image */
-            background-repeat: no-repeat; /* Prevents the background image from repeating */
-            background-attachment: fixed; /* Fixes the background image, so it doesn't scroll with the content */
-            height: 100vh; /* Sets the height of the background to the viewport height */
-            overflow: hidden; /* Hides any overflow content that might extend beyond the viewport */
-        }
-        /* Initial styling for the navbar */
         .navbar-nav {
             display: flex;
             list-style: none;
